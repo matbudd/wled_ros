@@ -1,0 +1,10 @@
+#goal definition
+
+uint8 segment_id
+SegmentState state
+float32 duration
+---
+#result definition
+bool success
+---
+#feedback

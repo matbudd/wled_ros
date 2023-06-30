@@ -1,0 +1,9 @@
+#goal definition
+bool on
+uint8 brightness
+bool set_brightness
+---
+#result definition
+bool success
+---
+#feedback

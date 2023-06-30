@@ -1,0 +1,11 @@
+<launch>
+
+  <arg name="hostname" default="wled-f6dafd.local" />
+
+  <node pkg="wled_ros" type="set_master_server.py" name="WLEDSetMaster" output="screen" args="--hostname $(arg hostname)">
+      <param name="hostname" value="$(arg hostname)" />
+  </node>
+  <node pkg="wled_ros" type="play_on_segment_server.py" name="WLEDPlayOnSegment" output="screen" args="--hostname $(arg hostname)">
+      <param name="hostname" value="$(arg hostname)" />
+  </node>
+</launch>
